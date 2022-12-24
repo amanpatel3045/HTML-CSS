@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>GRID WITH MEDIA QUERRY</title>
+    <style>
+      #honda {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        /* background-color: teal; */
+
+        margin: 40px;
+        row-gap: 20px;
+      }
+      #anu {
+        border-radius: 3%;
+        width: 90%;
+        /* background-color: crimson; */
+        margin: auto;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+      }
+      h2,
+      p {
+        margin: 30px;
+      }
+      h1 {
+        font-size: 25px;
+        margin: 30px;
+      }
+      /* Medium */
+      @media screen and (max-width: 899px) {
+        #honda {
+          grid-template-columns: repeat(2, 1fr);
+        }
+      }
+      /* Small */
+      @media screen and (max-width: 399px) {
+        #honda {
+          grid-template-columns: repeat(1, 1fr);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="honda">
+      <div id="anu" class="singh1">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Cappuccino</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+      <div id="anu" class="singh2">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Americano</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+      <div id="anu" class="singh3">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Espresso</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+      <div id="anu" class="singh4">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Macchiato</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+      <div id="anu" class="singh5">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Mocha</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+      <div id="anu" class="singh6">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Coffee Latte</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+      <div id="anu" class="singh7">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Piccolo Latte</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+      <div id="anu" class="singh8">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Ristretoo</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+      <div id="anu" class="singh9">
+        <div style="display: flex; justify-content: space-between">
+          <h2>Affogato</h2>
+          <h1 style="color: brown">$49</h1>
+        </div>
+        <p>Usage of internet is becoming more common dueto rapid advance.</p>
+      </div>
+    </div>
+  </body>
+</html>
