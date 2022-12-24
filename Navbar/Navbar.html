@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Masai Navbar</title>
+    <style>
+      #container {
+        display: flex;
+        /* border: 1px solid red; */
+        justify-content: space-around;
+      }
+      #menu {
+        display: flex;
+        width: 47%;
+        gap: 30px;
+      }
+
+      #menu p {
+        cursor: pointer;
+      }
+      p:hover {
+        color: rgb(255, 71, 71);
+        font-family: Helvetica, Arial, Helvetica, sans-serif;
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div id="container">
+        <div id="logo">
+          <img src="https://www.masaischool.com/img/navbar/logo.svg" alt="" />
+        </div>
+        <div id="menu">
+          <p>COURSE</p>
+          <p>FEE</p>
+          <p>ABOUT</p>
+          <p>HIRE</p>
+          <p>FAQ</p>
+          <p>EVENTS</p>
+          <p style="display: flex; margin-left: 20px">
+            REFER & EARN <span></span>
+            <img
+              style="width: 30px"
+              src="https://www.masaischool.com/img/referral/hand.png"
+              alt=""
+            />
+          </p>
+        </div>
+      </div>
+    </nav>
+  </body>
+</html>
