@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>Calculator</title>
+    <style>
+        body{
+            border: 2px solid black;
+            width: fit-content;
+            margin: auto;
+            margin-top: 30px;
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            background-color: aqua;
+        }
+      
+        h1{
+            text-align: center;
+            color: crimson;
+        }
+        .inp{
+            text-align: center;
+        
+            
+        }
+     input{
+        border: 2px solid crimson;
+        border-radius: 5px;
+        box-shadow: rgba(6, 24, 44, 0.4) 0px 0px 0px 2px, rgba(6, 24, 44, 0.65) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+        background-color: whitesmoke;
+    }
+    #button-id{
+        text-align: center;
+        font-size: 30px;
+        width: fit-content;
+        margin-left: 40px;
+        margin-bottom: 20px;
+    }
+    button{
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    }
+
+    </style>
+</head>
+
+<body>
+    <h1>Mini-Calculator</h1>
+    <div class="inp">
+        <input placeholder="Enter First Number" type="number" id="inp1" value=""><br><br>
+        <input placeholder="Enter Second Number " type="number" id="inp2" value="">
+    </div>
+    <br>
+    <div id="button-id">
+        <button onclick="add()"><i class="fa-solid fa-plus"></i></button>&nbsp;
+        <button onclick="Subtract()"><i class="fa-solid fa-minus"></i></button>&nbsp;
+        <button onclick="Multiply()"><i class="fa-solid fa-xmark"></i></button>&nbsp;
+        <button onclick="division()"><i class="fa-solid fa-divide"></i></button>
+    </div>
+  
+</body>
+
+<script>
+    function add(){
+   var a = document.querySelector("#inp1").value;
+   var b = document.querySelector("#inp2").value;
+    a = +a;
+    b = +b;
+    alert(a+b);
+    } 
+    function Subtract(){
+   var a = document.querySelector("#inp1").value;
+   var b = document.querySelector("#inp2").value;
+   a = +a;
+    b = +b;
+    alert(a-b);
+    } 
+    function Multiply(){
+   var a = document.querySelector("#inp1").value;
+   var b = document.querySelector("#inp2").value;
+   a = +a;
+    b = +b;
+    alert(a*b);
+    } 
+    function division(){
+   var a = document.querySelector("#inp1").value;
+   var b = document.querySelector("#inp2").value;
+   a = +a;
+    b = +b;
+    alert(a/b);
+    } 
+</script>
+
+</html>
