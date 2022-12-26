@@ -1,0 +1,66 @@
+/* Write your styles here */
+#header {
+  text-align: center;
+}
+#teachers {
+  display: grid;
+
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  width: 80%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+#teachers > div {
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#teachers > div > img {
+  width: 90%;
+  margin-top: 20px;
+}
+#courses {
+  grid-template-columns: repeat(3, 1fr);
+  display: grid;
+  width: 70%;
+  margin: auto;
+  gap: 20px;
+}
+#courses > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#courses img {
+  width: 80px;
+  height: 80px;
+  margin-right: 30px;
+}
+#header p {
+  width: 30%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+h6 {
+  margin: -10px;
+}
+/* keep media queries at that last */
+/* medium screens */
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+  #teachers {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  #courses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+/* small screens */
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+  #teachers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  #courses {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
