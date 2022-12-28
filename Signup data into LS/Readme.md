@@ -1,1 +1,1 @@
-# Storing signup data into local storage
+# Storing signup credentials into local storage
