@@ -11,3 +11,15 @@ The <div> element defines a division or a section in an HTML document.
 The <p> element is a block-level element.
 
 The <div> element is a block-level element.
+
+# Here are the block-level elements in HTML:
+
+```
+<address><article><aside>
+<blockquote><canvas>
+<dd><div><dl><dt><fieldset>
+<figcaption><figure><footer><form><h1>-<h6>
+<header><hr><li><main><nav><noscript>
+<ol><p><pre><section>
+<table><tfoot><ul><video>
+```
