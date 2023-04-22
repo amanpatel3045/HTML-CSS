@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Design Example</title>
+    <style>
+      /* Styles for desktop */
+      .container {
+        width: 960px;
+        margin: 0 auto;
+        background-color: #f0f0f0;
+      }
+
+      /* Styles for tablets */
+      @media only screen and (max-width: 768px) {
+        .container {
+          width: 750px;
+        }
+      }
+
+      /* Styles for smartphones */
+      @media only screen and (max-width: 480px) {
+        .container {
+          width: 300px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Responsive Design Example</h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec mattis nisl ut elit malesuada bibendum. Sed ut sollicitudin ipsum. Praesent consequat ante ut metus aliquet vulputate. Nulla facilisi. Duis malesuada euismod sapien, eget eleifend lorem semper et. Integer quis enim sem. Ut vulputate quam sed nibh blandit, id sagittis enim tempor.</p>
+    </div>
+  </body>
+</html>
